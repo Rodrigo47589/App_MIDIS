@@ -137,7 +137,7 @@ class _LoginScreenState extends State<LoginScreen>
                     // Acción al presionar el botón si no hay error
                     print("Número válido: ${_dniController.text}");
                     Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Menu()));
+                        MaterialPageRoute(builder: (context) => AudioPage()));
                   }
                 },
                 child: Text('Ingresar'),
