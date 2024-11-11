@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Paginas/Menu.dart';
+import 'package:flutter_application_1/Paginas/inicio.dart';
 
 void main() {
   runApp(MyApp());
@@ -136,10 +137,8 @@ class _LoginScreenState extends State<LoginScreen>
                   if (_errorMessage.isEmpty) {
                     // Acción al presionar el botón si no hay error
                     print("Número válido: ${_dniController.text}");
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => QuestionScreen()));
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => MenuScreen()));
                   }
                 },
                 child: Text('Ingresar'),
