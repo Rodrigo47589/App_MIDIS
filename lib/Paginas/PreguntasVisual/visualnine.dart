@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
-import 'package:flutter_application_1/Paginas/visual.dart';
+import 'package:flutter_application_1/Paginas/PreguntasVisual/visualten.dart';
 
-class QuestionScreen extends StatelessWidget {
+class QuestionScreennine extends StatelessWidget {
   final AudioPlayer _audioPlayer = AudioPlayer();
 
-  QuestionScreen({super.key});
+  QuestionScreennine({super.key});
 
   Future<void> playSound() async {
     // Reproduce el audio
@@ -17,7 +17,7 @@ class QuestionScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 2, 13, 112),
       appBar: AppBar(
-        title: const Text("Pregunta 1"),
+        title: const Text("Pregunta 9"),
         backgroundColor: Colors.blue.shade900,
       ),
       body: Center(
@@ -61,7 +61,7 @@ class QuestionScreen extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => QuestionScreentwo(),
+            builder: (context) => QuestionScreenten(),
           ),
         );
       },

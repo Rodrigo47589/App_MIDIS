@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/Paginas/Menu.dart';
+import 'package:flutter_application_1/Paginas/PreguntasVisual/visual.dart';
 
 class MenuScreen extends StatelessWidget {
   const MenuScreen({super.key});
