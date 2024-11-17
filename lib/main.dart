@@ -14,7 +14,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LoginScreen(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => LoginScreen(),
+        '/menu': (context) => MenuScreen(),
+      },
     );
   }
 }
@@ -134,10 +138,8 @@ class _LoginScreenState extends State<LoginScreen>
                 onPressed: () {
                   _validateInput();
                   if (_errorMessage.isEmpty) {
-                    // Acción al presionar el botón si no hay error
-                    print("Número válido: ${_dniController.text}");
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => MenuScreen()));
+                    // Navegar al menú principal
+                    Navigator.pushNamed(context, '/menu');
                   }
                 },
                 child: Text('Ingresar'),
