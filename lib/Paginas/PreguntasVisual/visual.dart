@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter_application_1/Paginas/PreguntasVisual/visualtwo.dart';
+import 'package:flutter_application_1/Paginas/score_manager.dart';
 
 class QuestionScreen extends StatelessWidget {
   final AudioPlayer _audioPlayer = AudioPlayer();
@@ -44,7 +45,7 @@ class QuestionScreen extends StatelessWidget {
                   _emojiButton(context, "😁", "1.Nunca", 1),
                   _emojiButton(context, "🤨", "2.Un Poco", 2),
                   _emojiButton(context, "😔", "3.Moderadamente", 3),
-                  _emojiButton(context, "😠", "4.Bastante Frecuente", 4),
+                  _emojiButton(context, "😠", "4.muy Frecuente", 4),
                   _emojiButton(context, "😡", "5.Siempre", 5),
                 ],
               ),
@@ -55,9 +56,11 @@ class QuestionScreen extends StatelessWidget {
     );
   }
 
-  Widget _emojiButton(BuildContext context, String emoji, String label, int i) {
+  Widget _emojiButton(
+      BuildContext context, String emoji, String label, int puntos) {
     return GestureDetector(
       onTap: () {
+        ScoreManager().goodPoints += puntos;
         Navigator.push(
           context,
           MaterialPageRoute(
