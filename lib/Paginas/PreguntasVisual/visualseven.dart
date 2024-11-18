@@ -42,9 +42,9 @@ class QuestionScreenseven extends StatelessWidget {
                 runSpacing: 16,
                 alignment: WrapAlignment.center,
                 children: [
-                  _emojiButton(context, "😁", "1.Nunca", 1),
+                  _emojiButton(context, "😐", "1.Nunca", 1),
                   _emojiButton(context, "🤨", "2.Un Poco", 2),
-                  _emojiButton(context, "😔", "3.Moderado", 3),
+                  _emojiButton(context, "😤", "3.Moderado", 3),
                   _emojiButton(context, "😠", "4.Muy frecuente", 4),
                   _emojiButton(context, "😡", "5.Siempre", 5),
                 ],
