@@ -10,7 +10,7 @@ class QuestionScreenfour extends StatelessWidget {
 
   Future<void> playSound() async {
     // Reproduce el audio
-    await _audioPlayer.play(AssetSource('audios/canon.mp3'));
+    await _audioPlayer.play(AssetSource('audios/preg4.mp3'));
   }
 
   @override
@@ -44,9 +44,9 @@ class QuestionScreenfour extends StatelessWidget {
                 children: [
                   _emojiButton(context, "😑", "1.Nunca", 1),
                   _emojiButton(context, "😐", "2.Un Poco", 2),
-                  _emojiButton(context, "🤨", "3.Moderado", 3),
-                  _emojiButton(context, "🤔", "4.Muy frecuente", 4),
-                  _emojiButton(context, "🧐", "5.Siempre", 5),
+                  _emojiButton(context, "😔", "3.Moderado", 3), //😔 😑😐🤨🤔🧐
+                  _emojiButton(context, "😯", "4.Bastante frecuente", 4), //😯
+                  _emojiButton(context, "😳", "5.Siempre", 5), //😳
                 ],
               ),
             ],
@@ -60,7 +60,7 @@ class QuestionScreenfour extends StatelessWidget {
       BuildContext context, String emoji, String label, int puntos) {
     return GestureDetector(
       onTap: () {
-        ScoreManager().goodPoints += puntos;
+        ScoreManager().badPoints += puntos;
         Navigator.push(
           context,
           MaterialPageRoute(

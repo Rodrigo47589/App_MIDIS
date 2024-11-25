@@ -1,6 +1,6 @@
 // ignore_for_file: prefer_const_constructors
-
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart'; // Importar para usar TextInputFormatter
 import 'package:flutter_application_1/Paginas/inicio.dart';
 
 void main() {
@@ -114,6 +114,9 @@ class _LoginScreenState extends State<LoginScreen>
                 controller: _dniController,
                 keyboardType: TextInputType.number,
                 maxLength: _maxDigits,
+                inputFormatters: [
+                  FilteringTextInputFormatter.digitsOnly, // Bloquear letras
+                ],
                 decoration: InputDecoration(
                   labelText:
                       'Ingrese número de ${_tabController.index == 0 ? "DNI" : "CE"}',

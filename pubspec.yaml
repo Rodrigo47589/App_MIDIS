@@ -61,10 +61,19 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-      - assets/audios/canon.mp3
       - assets/imagenes/logo.png
       - assets/imagenes/auditiva_icon.png
       - assets/imagenes/visual_icon.png 
+      - assets/audios/preg1.mp3
+      - assets/audios/preg2.mp3
+      - assets/audios/preg3.mp3
+      - assets/audios/preg4.mp3
+      - assets/audios/preg5.mp3
+      - assets/audios/preg6.mp3
+      - assets/audios/preg7.mp3
+      - assets/audios/preg8.mp3
+      - assets/audios/preg9.mp3
+      - assets/audios/preg10.mp3
       
 
 

@@ -59,7 +59,7 @@ class _MenuScreenState extends State<MenuScreen> {
             _buildMenuOption(
               context,
               icon: Icons.bar_chart,
-              label: 'Reportes',
+              label: '¿Quienes somos?',
               color: Colors.green[100]!,
               onTap: () {
                 // Acción cuando se presione el botón de Reportes
