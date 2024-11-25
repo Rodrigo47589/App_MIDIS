@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Paginas/score_manager.dart';
 
 class QuestionScreenfinal extends StatelessWidget {
+  const QuestionScreenfinal({super.key});
+
   @override
   Widget build(BuildContext context) {
     final scoreManager = ScoreManager();
